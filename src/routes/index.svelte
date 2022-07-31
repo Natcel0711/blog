@@ -1,3 +1,4 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<script>
+  import MainBlock from "../components/MainBlock.svelte"
+</script>
+<MainBlock/>
