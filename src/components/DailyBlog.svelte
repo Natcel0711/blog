@@ -1,7 +1,9 @@
 <script>
 	let date = new Date().toLocaleDateString('de-DE');
-	import {getContent} from "../stores/dailyBlogStore"
 	import DailyCard from "../components/DailyBlogCard.svelte"
+</script>
+<script context="module">
+	import {getContent} from "../stores/dailyBlogStore"
 </script>
 
 <section class="text-gray-600 body-font">
