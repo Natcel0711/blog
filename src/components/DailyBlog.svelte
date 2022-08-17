@@ -3,7 +3,7 @@
 	import DailyCard from "../components/DailyBlogCard.svelte"
 </script>
 <script context="module">
-	import {getContent} from "../stores/dailyBlogStore"
+	import {getContent} from "../stores/dailyBlogStore" 
 </script>
 
 <section class="text-gray-600 body-font">
@@ -12,7 +12,7 @@
 	{:then topPost }
 	<DailyCard Title={topPost.title} url={topPost.url}/>
 	{:catch name }
-	<p style="color: red">Error</p>
+	<p style="color: red">name</p>
 	{/await}
 	<div class="text-center w-full">
 		<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
